@@ -4,12 +4,22 @@ public class Main {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         System.out.println("a = : ");
-        int a = sc.nextInt();
+        double a = sc.nextInt();
         System.out.println("b = : ");
-        int b = sc.nextInt();
+        double b = sc.nextInt();
         System.out.println("c = : ");
-        int c = sc.nextInt();
-        int z = ((a - 3)*b/2)+c;
-        System.out.println("z = : " + z);
+        double c = sc.nextInt();
+        double b2 = Math.pow(b,2);
+        double b_2 = Math.pow(b,-2);
+        double a3 = Math.pow(a,3);
+        double z = b2-4*a*c;
+        if(z < 0) {
+            System.out.println("The expression is less than 0 ");
+        }
+        else{
+            double y = Math.sqrt((z));
+            double f = ((b + y)/(2*a)) - a3 * c + b_2;
+            System.out.printf("%.2f",f);
+        }
     }
 }
