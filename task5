@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("请输入T");
+        Scanner se=new Scanner(System.in);
+        int time=se.nextInt();
+        System.out.println(time);
+        int h=time/360;
+        int m=(time%360)/60;
+        int s=time-(h*360+m*60);
+        System.out.println(h+" "+m+" "+s);
+    }
+}
