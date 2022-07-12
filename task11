@@ -3,11 +3,11 @@ public class Main {
     public static void main(String[] args) {
         Scanner num=new Scanner(System.in);
         int x;
-        do { //цикл для корректного ввода положительного числа
+        do {
             System.out.print("Enter a positive integer: ");
             x=num.nextInt();
         } while(x<=0);
-        for (int i=1;i<x;i++) //цикл для вывода чисел до х
+        for (int i=1;i<x;i++)
         {
             System.out.print(i+ " ");
             if(i%15==0)
