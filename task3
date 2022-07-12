@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        double x = sc.nextDouble();
+        System.out.println("x = "+x);
+        double y = sc.nextDouble();
+        System.out.println("y = "+y);
+        double a1 = Math.sin(x);
+        System.out.println("sinx = "+ a1);
+        double a2 = Math.sin(y);
+        System.out.println("siny = "+ a2);
+        double b1 = Math.cos(x);
+        System.out.println("cosx = "+ b1);
+        double b2 = Math.cos(y);
+        System.out.println("cosy = "+ b2);
+        double c1 = Math.tan(x*y);
+        System.out.println("tanx*y = "+ c1);
+        double d = a1 + b2 / b1 - a2 * c1;
+        System.out.println("The formula result is : "+ d );
+    }
+}
