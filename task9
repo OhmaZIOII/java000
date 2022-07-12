@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner num=new Scanner(System.in);
+        System.out.println("brick sizes");
+        int x;
+        System.out.print("enter length: ");
+        x=num.nextInt();
+        int y;
+        System.out.print("enter height: ");
+        y=num.nextInt();
+        int с;
+        System.out.print("enter width: ");
+        с=num.nextInt();
+        System.out.println("hole dimensions");
+        int A;
+        System.out.print("enter length: ");
+        A=num.nextInt();
+        int B;
+        System.out.print("enter height: ");
+        B=num.nextInt();
+        if(x<=A&&y<=B) // ветвление с двумя обязательными условиями
+            System.out.print("The brick will pass through the hole");
+        else
+            System.out.print("The brick will not pass through the hole");
+            }
+       }
