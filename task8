@@ -1,0 +1,19 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner=new Scanner(System.in);
+        List<Double> list=new ArrayList<>();
+        for(int i=0;i<4;i++){
+            list.add(scanner.nextDouble());
+        }
+        double a=list.get(0);
+        double b=list.get(1);
+        double c=list.get(2);
+        double d=list.get(3);
+        double resule=Math.max(Math.min(a,b),Math.min(c,d));
+        System.out.println(resule);
+    }
+}
