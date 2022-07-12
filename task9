@@ -19,7 +19,7 @@ public class Main {
         int B;
         System.out.print("enter height: ");
         B=num.nextInt();
-        if(x<=A&&y<=B) // ветвление с двумя обязательными условиями
+        if(x<=A&&y<=B)
             System.out.print("The brick will pass through the hole");
         else
             System.out.print("The brick will not pass through the hole");
