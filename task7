@@ -1,0 +1,26 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("请输入两个角的度数");
+        Scanner se=new Scanner(System.in);
+        List<Float> list=new ArrayList<>();
+        for(int i=0;i<2;i++){
+            list.add(se.nextFloat());
+        }
+        float a= list.get(0);
+        float b= list.get(1);
+        if(a+b<180){
+            System.out.println("是三角形");
+            if(a+b==90){
+                System.out.println("是直角");}
+            else{
+                System.out.println("不是");
+            }
+        }else {
+            System.out.println("不是三角");
+        }
+    }
+}
